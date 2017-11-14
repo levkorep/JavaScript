@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<input id="in" type="text"/>
+		<button id="calc">Calculate</button>
+		<div id="out">-</div>
+		<script>
+			$('#calc').click(function () {
+				var input = $('#in').val()
+				
+				var result = input[0] + "00+" + input[1]+"0+" + input[2]
+				
+				
+				$('#out').text(result)
+			})
+		</script>
+	</body>
+</html>
